@@ -71,7 +71,15 @@ PoolsMaster.Instance.ReturnAllToPool();
 
 It is based on checking the lifetime of the root particle system
 
+#### 1. Spawn
 ```cs
-// Spawn particle
+// Common way to spawn particle
 var transform = RawFXPool.Instance.SpawnParticle(particlePrefab, position, opt:rot);
+
+// Way when it is not known in advance whether there will be any script on the particle system inherited from PoolableComponent  or not.
+var transform = RawFXPool.Instance.UniversalSpawnParticle(prefab, pos, rot);
+```
+#### 2. Return to pool
+```cs
+RawFXPool.Instance.ReturnAllToPool();
 ```
