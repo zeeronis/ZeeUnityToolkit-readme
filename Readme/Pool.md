@@ -18,15 +18,15 @@ public class Enemy: PoolableComponent<Enemy>
 }
 ```
 
-How to use it with abstarctions:
+How to use it with addtional inheriteds:
 ```cs
-public abstract class Enemy<TItem>: PoolableComponent<TItem> 
+public abstract class ProgressBar<TItem>: PoolableComponent<TItem> 
     where TItem : PoolableComponent<TItem>
 {
     // ...
 }
 
-public class GreatEnemy: Enemy<GreatEnemy>
+public class ProgressBarWithText: ProgressBar<ProgressBarWithText>
 {
     // ...
 }
