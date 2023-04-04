@@ -10,6 +10,8 @@
 
 - How to inherit and use
 ```cs
+using Zee.Singleton;
+
 public class ExampleClass : SingletonClass<ExampleClass>
 {
     public void PrintText()
@@ -25,6 +27,8 @@ ExampleClass.Instance.SayHelloWorld();
 ## Monobehavior
 - How to inherit and use
 ```cs
+using Zee.Singleton;
+
 public class ExampleClass : SingletonClass<ExampleClass>
 {
     public void SayHelloWorld()
