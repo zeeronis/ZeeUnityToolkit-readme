@@ -69,7 +69,6 @@ PoolsMaster.Instance.ReturnAllToPool();
 
 ## ParticleSystem
 
-#### 1. Ways to return items back to pool.
 It is based on checking the lifetime of the root particle system
 
 ```cs
