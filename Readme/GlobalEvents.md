@@ -1,18 +1,25 @@
-# Global Events
+[![docs badge](https://img.shields.io/badge/docs-reference-blue.svg)](https://github.com/zeeronis/ZeeUnityToolkit-readme/blob/main/README.md)
 
-#### Notes:
-1. All subscribers will be automatically deleted every time you upload a new scene. Also, u can disable this behavior:
+
+# Global Events
+Сontents:
+-  [Notes](Coroutines.md#notes)
+-  [Events Data](Coroutines.md#example-events-data)
+-  [Subscribe](Coroutines.md#subscribe)
+-  [Unsubscribe](Coroutines.md#unsubscribe)
+-  [Invoke Event](Coroutines.md#invoke-event)
+
+
+##
+- ### Notes
+All subscribers will be automatically deleted every time you unload scene. Also, u can disable this behavior.
 ```cs
 using Zee.Events;
 
 EventAggregator.ForceCleanOnSceneUnloaded = false;
 ```
 
-2. Any destroyed subscribers will be automatically deleted
-
-#### How to use:
-
-1. Example events data
+- ### Example events data
 ```cs
 public struct SomeEvent
 {
@@ -26,7 +33,7 @@ public enum SomeEnumEvent
 }
 ```
 
-2. Subscribe to all events with data type
+- ### Subscribe to all events with data type
 ```cs
 using Zee.Events;
 
@@ -41,14 +48,19 @@ EventAggregator.AddListener<SomeEnumEvent>(this, data =>
 });
 ```
 
-2. Unsubscribe
+- ### Unsubscribe
+Any destroyed(Collected by GC) subscribers will be automatically deleted from listeners.
 ```cs
+using Zee.Events;
+
 EventAggregator.RemoveListener<SomeEvent>(this);
 EventAggregator.RemoveListener<SomeEnumEvent>(this);
 ```
 
-3. Invoke event
+- ### Invoke event
 ```cs
+using Zee.Events;
+
 EventAggregator.Invoke(new SomeEvent());
 EventAggregator.Invoke(SomeEnumEvent.Two);
 ```
