@@ -24,6 +24,8 @@ To prepare an object, you need to inherit from `PoolableComponent` and must impl
 `OnDeactivated()` - Will called OnReturnedToPool event, after that gameobject will disabled and returned to pool as child
 
 ```cs
+using Zee.Pool;
+
 public class Enemy: PoolableComponent<Enemy> 
 {
     protected override void OnActivated()
@@ -40,6 +42,8 @@ public class Enemy: PoolableComponent<Enemy>
 
 - ### Multiple inheritances
 ```cs
+using Zee.Pool;
+
 public abstract class ProgressBar<TItem>: PoolableComponent<TItem> 
     where TItem : PoolableComponent<TItem>
 {
@@ -98,6 +102,11 @@ Create `GameObject` on scene and add `PoolsMaster` component; Now u can drag and
 
 - ### Notes 
 It is based on checking the lifetime of the root `ParticleSystem`. When the root `ParticleSystem` lifetime expires, it will automatically return to the pool.
+
+Namespace:
+```cs
+using Zee.Pool; 
+```
 
 - ### Instantiate
 ```cs
