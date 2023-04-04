@@ -42,6 +42,7 @@ ItemsPool<Enemy>.Instance.PreCreateItems(prefabReference, count);
 ```
 
 #### 3. Ways to get items from pool.
+As Well, `GetItem()` method have all overloads like and `Instantiate()`;
 ```cs
 /// Return first added prefab in pool with Enemy type
 ItemsPool<Enemy>.Instance.GetItem(pos, rot);
@@ -54,6 +55,7 @@ ItemsPool<Enemy>.Instance.GetItem(prefabReference, pos, rot);
 ```
 
 #### 4. Ways to return items back to pool.
+In simple, u need to use `UrScriptName.ReturnToPool()` instead `Destroy(gameobject)`.
 ```cs
 /// Return Concrete item to pool
 var enemy = ItemsPool<Enemy>.Instance.GetItem(pos, rot);
