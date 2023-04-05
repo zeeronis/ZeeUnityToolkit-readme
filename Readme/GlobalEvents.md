@@ -5,7 +5,7 @@
 Сontents:
 -  [Notes](GlobalEvents.md#notes)
 -  [Events Data](GlobalEvents.md#example-events-data)
--  [Subscribe](GlobalEvents.md#subscribe)
+-  [Subscribe](GlobalEvents.md#subscribe-to-all-events-with-data-type)
 -  [Unsubscribe](GlobalEvents.md#unsubscribe)
 -  [Invoke Event](GlobalEvents.md#invoke-event)
 
