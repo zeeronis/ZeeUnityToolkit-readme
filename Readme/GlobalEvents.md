@@ -3,11 +3,11 @@
 
 # Global Events
 Сontents:
--  [Notes](Coroutines.md#notes)
--  [Events Data](Coroutines.md#example-events-data)
--  [Subscribe](Coroutines.md#subscribe)
--  [Unsubscribe](Coroutines.md#unsubscribe)
--  [Invoke Event](Coroutines.md#invoke-event)
+-  [Notes](GlobalEvents.md#notes)
+-  [Events Data](GlobalEvents.md#example-events-data)
+-  [Subscribe](GlobalEvents.md#subscribe)
+-  [Unsubscribe](GlobalEvents.md#unsubscribe)
+-  [Invoke Event](GlobalEvents.md#invoke-event)
 
 
 ##
