@@ -9,7 +9,7 @@
    - [Return To Pool](Pool.md#return-to-pool)
    - [Pre Create (Code)](Pool.md#pre-create-from-code)
    - [Pre Create (Inspector)](Pool.md#pre-create-from-inspector)
--  [Particle Systems Pool](Pool.md#monobehavior)
+-  [Particle Systems Pool](Pool.md#particlesystem)
    - [Notes](Pool.md#notes)
    - [Instantiate](Pool.md#instantiate-1)
    - [Return To Pool](Pool.md#return-to-pool-1)
