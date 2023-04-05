@@ -1,8 +1,8 @@
 [![docs badge](https://img.shields.io/badge/docs-reference-blue.svg)](https://github.com/zeeronis/ZeeUnityToolkit-readme/blob/main/README.md)
 
 Сontents:
-   - [Notes](Coroutines.md#notes)
-   - [Use Examples](Coroutines.md#use-examples)
+   - [Notes](Yielders.md#notes)
+   - [Use Examples](Yielders.md#use-examples)
 
 # Yielders
 
