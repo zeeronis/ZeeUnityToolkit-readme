@@ -95,7 +95,14 @@ PoolsMaster.Instance.ReturnAllToPool();
 ItemsPool<Enemy>.Instance.PreCreateItems(prefabReference, count);
 ```
 - ### Pre-create from inspector
-Create `GameObject` on scene and add `PoolsMaster` component; Now u can drag and drop prefabs into list.
+Drag `PoolsMaster` to the your initial scene.
+You can find `PoolsMaster` prefab here:
+
+![image_2023-04-15_10-03-433](https://user-images.githubusercontent.com/15892895/232205334-696a301c-314c-46ad-ba9a-17227a8a4a06.png)
+
+Now you can Drag&Drop `prefabs`, to the prefabs list and choose count for pre-create on `Awake`. Only `prefabs` can be dragged to the list, the `script` that is inherited from `PoolableComponent`
+
+![image_2023-04-15_10-03-4612](https://user-images.githubusercontent.com/15892895/232205603-db1a25ef-6e60-430e-b2fa-2f29d835b47c.png)
 
 
 ## ParticleSystem
