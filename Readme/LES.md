@@ -72,4 +72,25 @@ On events received from `LESAgregator`, spawn particles from `prefabs` in target
 
 
 #  LES Material Property
+On events received from `LESAgregator`, sets the values in the `Shader` whose `Material` it is used in the `Renderer Component`. Allows to animate `Shader` properties via using `Animation Curves`.
 
+- ### Events
+![image](https://user-images.githubusercontent.com/15892895/235377250-571bd591-5479-4946-8f74-7af43be1b1de.png)
+
+1. Allows you to use multiple `Effects` per event.
+2. Allows you to use multiple `Groups` per effect.
+3. `Play01` - Playing full animation, `Set0` - Sets the value from the beginning of the `Animation Curve`, `Set1` - Sets the value from the end of the `Animation Curve`.
+
+- ### Effects
+![image](https://user-images.githubusercontent.com/15892895/235376901-6c25d2a3-46ea-4571-ad8c-24364954a253.png)
+
+1. The name of the effect to use in the `Events` tab.
+2. The property name in the `Shader`.
+3. `Animation Curve` used for animation, where vertical is `Value` and horizontal is `Duration`.
+
+- ### Groups
+![image](https://user-images.githubusercontent.com/15892895/235376751-0444bf86-9f15-4a81-8026-f8d051fe3746.png)
+
+1. List of default renderer group.
+2. Recursively collect all renderers in childs and add them to the default list.
+3. Allows you to set up your own groups.
