@@ -45,7 +45,11 @@ Available only in Play mode.
 2. As information, shows first parent `LESAgregattor` of the hierarchy.
 3. Allows you to send events manually.
 
+
 #  LES Animator
+Required `Animator` component. On events received from `LESAgregator`, sets the values in the `Animator`.
+
+![image_2023-04-30_23-30-35](https://user-images.githubusercontent.com/15892895/235374941-e994eb6c-a0d5-453e-ad73-2fac55787a03.png)
 
 
 #  LES Coroutine Animation
