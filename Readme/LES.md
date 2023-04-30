@@ -6,13 +6,9 @@
    - [Settings](LES.md#settings)
    - [Debug](LES.md#debug)
 -  [LES Animator](LES.md#les-animator)
-   - [...](LES.md#)
 -  [LES Coroutine Animation](LES.md#les-coroutine-animation)
-   - [...](LES.md#)
 -  [LES GObj Activation](LES.md#les-gobj-activation)
-   - [...](LES.md#)
 -  [LES Particles Pool Spawner](LES.md#les-particles-pool-spawner)
-   - [...](LES.md#)
 -  [LES Material Property](LES.md#les-material-property)
    - [...](LES.md#)
 
@@ -48,18 +44,31 @@ Available only in Play mode.
 
 #  LES Animator
 Required `Animator` component. On events received from `LESAgregator`, sets the values in the `Animator`.
-
+- ### Events
 ![image_2023-04-30_23-30-35](https://user-images.githubusercontent.com/15892895/235374941-e994eb6c-a0d5-453e-ad73-2fac55787a03.png)
 
 
 #  LES Coroutine Animation
-
+Required [Coroutine Animation](https://github.com/zeeronis/ZeeUnityToolkit-readme/blob/main/Readme/Coroutines.md#coroutine-animation-component) component. On events received from `LESAgregator`, call methods in the [Coroutine Animation](https://github.com/zeeronis/ZeeUnityToolkit-readme/blob/main/Readme/Coroutines.md#coroutine-animation-component).
+- ### Events
+![image_2023-04-30_23-35-29](https://user-images.githubusercontent.com/15892895/235375116-a7840e58-5f69-4101-b3e7-954ec655004f.png)
 
 
 #  LES GObj Activation
+On events received from `LESAgregator`, activates or deactivates `GameObjects` in the lists.
+- ### Events
+![image_2023-04-30_23-41-12](https://user-images.githubusercontent.com/15892895/235375319-56bb851b-9448-4129-b9ef-2d950dbef77f.png)
 
 
 #  LES Particles Pool Spawner
+On events received from `LESAgregator`, spawn particles from `prefabs` in target `Transform`. Uses [RawFXPool](https://github.com/zeeronis/ZeeUnityToolkit-readme/blob/main/Readme/Pool.md#particlesystem) for reuse particles.
+- ### Events
+![image](https://user-images.githubusercontent.com/15892895/235375591-d659543c-260c-4f92-b25f-5ae784d27648.png)
+
+1. Uses selected `Transform` for set position for the spawned particle. By default uses self `Transform`.
+2. Reference to any `ParticleSystem` `prefab` from Assets in project.
+3. Spawned `ParticleSystem` will be placed as a child of the selected `GameObject`.
+4. On - Uses default Unity rescale while drag object from `World` space to child `Transform`. Off - Saves prefab scale, as local scale inside targeted Transform.
 
 
 #  LES Material Property
