@@ -1,6 +1,7 @@
 ## Requirements
 - Unity version 2020 and later
 - Odin Inspector 3.1.12.2 and later
+- TextMeshPro
 
 ## Systems
 - [Pool System](Readme/Pool.md) - Based on generics and inheritance. Forgot about "string as key" based pools.
