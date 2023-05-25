@@ -1,3 +1,7 @@
+## Requirements
+- Unity version 2020 and later
+- Odin Inspector 3.1.12.2 and later
+
 ## Systems
 - [Pool System](Readme/Pool.md) - Based on generics and inheritance. Forgot about "string as key" based pools.
 - [Coroutines](Readme/Coroutines.md) - Wrapper on unity Coroutines for inspector and code use, for speed-up development.
